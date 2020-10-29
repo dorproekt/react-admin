@@ -1,0 +1,18 @@
+{
+  "name": "react-admin",
+  "version": "1.0.0",
+  "description": "React",
+  "main": "index.js",
+  "scripts": {
+    "db": "json-server --watch db.json --port 5000 --middlewares ./range.js",
+    "dev": "concurrently \"npm run db\" \"npm run start --prefix client\""
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Olexandr Gorban <ukrgorban@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.2"
+  }
+}
